@@ -1,13 +1,13 @@
 # bespokerUI
-A simple interface to help analysts experiment with the bespoke-minicheck LLM on Ollama.
+A simple interface to help analysts experiment with the bespoke-minicheck LLM on Ollama. 
 
 # Yes/No Question Answering App
 
-This Streamlit application uses the Ollama AI model to answer yes/no questions based on provided context. It's designed to work with the `bespoke-minicheck` model but can be adapted for other Ollama models.
+This Streamlit application uses the Ollama AI model to answer yes/no questions based on provided context with special focus on one LLM that purely generates Yes and No responses, vice typical "chatty" LLM responses. It's designed to work with the `bespoke-minicheck` model but can be adapted for other Ollama models (not recommended, use a proper UI that is not so highly restricted).
 
 ## Features
 
-- Uses Ollama AI for question answering
+- Uses Ollama AI for question answering (functionality is for bespoke-minicheck testing ONLY).
 - Provides yes/no answers based on given context
 - Displays debug information including the full prompt and API response
 - Shows real-time status of the analysis process
@@ -19,12 +19,13 @@ This Streamlit application uses the Ollama AI model to answer yes/no questions b
 - Streamlit
 - Ollama (installed and running on your system)
 - `bespoke-minicheck` model (or another compatible Ollama model)
+- Made on Ubuntu, good luck with other OSes.
 
 ## Installation
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/yes-no-question-answering-app.git
+   git@github.com:jimccadm/bespokerUI.git
    cd yes-no-question-answering-app
    ```
 
@@ -44,7 +45,7 @@ This Streamlit application uses the Ollama AI model to answer yes/no questions b
 
 1. Run the Streamlit app:
    ```bash
-   streamlit run app.py
+   streamlit run st_bespokerUI.py
    ```
 
 2. Open your web browser and go to the URL provided by Streamlit (usually `http://localhost:8501`).
@@ -73,6 +74,6 @@ To use a different Ollama model, change the `MODEL_NAME` variable at the top of 
 
 ## Contributing
 
-Contributions, issues, and feature requests are welcome. Feel free to check [issues page](https://github.com/yourusername/yes-no-question-answering-app/issues) if you want to contribute.
-
+No requirement, intended for Single use Project but freely available to others who want to experiment with Yes/No LLMs.
 ## License
+None
