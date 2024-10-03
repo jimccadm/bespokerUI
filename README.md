@@ -26,7 +26,7 @@ This Streamlit application uses the Ollama AI model to answer yes/no questions b
 1. Clone this repository:
    ```bash
    git@github.com:jimccadm/bespokerUI.git
-   cd yes-no-question-answering-app
+   cd bespokerUI
    ```
 
 2. Install the required Python packages:
